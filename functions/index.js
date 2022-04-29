@@ -25,7 +25,7 @@ exports.backgroundJob = functions
     const query = db
       .collection("queue")
       .where("performAt", "<=", now)
-      .where("status", "==", "scheduled")
+      .where("status", "in", ["failed", "scheduled"])
       .where("retries", "<=", MAX_RETRIES);
 
     const queue = await query.get();

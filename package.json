@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "dependencies": {
+    "firebase-admin": "^10.1.0"
+  },
+  "scripts": {
+    "emulator": "firebase emulators:start"
+  }
+}
